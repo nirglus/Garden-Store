@@ -36,7 +36,8 @@ a{
     color:#fff;
 }
 .header img{
-    height:20vh;
+    height:100%;
+    width:100%;
 }
 .sidebar{
     grid-area: sidebar;
@@ -58,4 +59,18 @@ a{
 .sidebar ul{
     flex-direction: column;
     justify-content: space-around;
+}
+@media screen and (max-width:600px){
+    .container{
+        grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "main main main main main"
+        "main main main main main"
+        "footer footer footer footer footer"
+    ;
+    }
+    .sidebar{
+        display: none;;
+    }
 }
