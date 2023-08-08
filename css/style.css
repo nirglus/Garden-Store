@@ -65,18 +65,27 @@ a{
 }
 .card-1 img:hover{
     filter: blur(2px);
+    animation: changeForm 3s linear;
 }
 .card-2 img:hover{
    filter: brightness(160%);
+   animation: changeForm 3s linear;
 }
 .card-3 img:hover{
     filter: contrast(50%);
+    animation: changeForm 3s linear;
 }
 .card-4 img:hover{
     filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+    animation: changeForm 3s linear;
 }
 .card-5 img:hover{
     filter: hue-rotate(60deg);
+    animation: changeForm 3s linear;
+}
+@keyframes changeForm{
+    from{border-radius: 0%;}
+    to{border-radius: 50%;}
 }
 .footer{
     grid-area: footer;
