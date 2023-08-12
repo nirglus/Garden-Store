@@ -41,6 +41,7 @@ a{
 }
 .sidebar{
     grid-area: sidebar;
+    background-image: url(../images/background1.jpg);
 }
 .main{
     grid-area: main;
@@ -50,6 +51,8 @@ a{
     align-items: center;
     justify-content: center;
     background-image: url(../images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .main img{
