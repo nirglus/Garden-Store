@@ -46,6 +46,23 @@ a{
     background-blend-mode: multiply;
     color:#fff;
 }
+.sidebar ul li{
+    position: relative;
+}
+.sidebar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(0, 55, 255);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .sidebar ul li:hover::after{
+    width: 80%;
+  }
 .main{
     grid-area: main;
     display: flex;
