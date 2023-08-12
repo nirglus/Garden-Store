@@ -42,6 +42,9 @@ a{
 .sidebar{
     grid-area: sidebar;
     background-image: url(../images/background1.jpg);
+    background-color: rgb(88, 88, 88);
+    background-blend-mode: multiply;
+    color:#fff;
 }
 .main{
     grid-area: main;
